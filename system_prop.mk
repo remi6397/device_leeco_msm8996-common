@@ -31,9 +31,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qc.sdk.audio.ssr=false \
     persist.audio.ssr.3mic=false \
-    ro.qc.sdk.audio.fluencetype=fluence \
-    persist.audio.fluence.voicecall=true \
-    persist.audio.fluence.voicerec=true \
+    ro.qc.sdk.audio.fluencetype=none \
+    persist.audio.fluence.voicecall=false \
+    persist.audio.fluence.voicerec=false \
     persist.audio.fluence.audiorec=false \
     persist.audio.fluence.speaker=true \
     tunnel.audio.encode=false \
@@ -56,6 +56,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.multiple.enabled=true \
     audio.offload.min.duration.secs=30 \
     af.fast_track_multiplier=1 \
+    ro.config.media_vol_steps=45 \
     audio_hal.period_size=192
 
 # Bluetooth
