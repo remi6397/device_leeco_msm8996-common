@@ -28,7 +28,7 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 LINEAGE_ROOT="$MY_DIR"/../../..
 
-HELPER="$LINEAGE_ROOT"/vendor/cm/build/tools/extract_utils.sh
+HELPER="$LINEAGE_ROOT"/vendor/xosp/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -58,6 +58,8 @@ write_headers
 
 # The device blobs
 write_makefiles "$MY_DIR"/../$DEVICE/proprietary-files.txt
+
+echo "I'm a $DEVICE! Hello, world!"
 
 # We are done with device
 write_footers
